@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>裁判文书检索系统</title>
+    <meta name="keywords" content="裁判文书检索系统">
+    <meta name="description" content="裁判文书检索系统">
+    <link rel="shortcut icon" href="/image/fushitong.png" type="image/x-icon">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/style.min.css?v=4.0.0" rel="stylesheet"><base target="_blank">
+    <link href="/css/common.css" rel="stylesheet">
+</head>
+<style>
+  body{
+    background: url(/image/body-bg.jpeg) no-repeat;
+    background-size: 100% 100%;
+  }
+</style>
+<body>
+    <div class="wrapper wrapper-content" id="todo-list-example">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="middle-box text-center fadeInRightBig" style="margin-top: 11%;">
+                    <h2 class="font-bold text-navy">裁判文书检索</h2>
+                </div>
+            </div>
+        </div>
+        <div class="search-form m-l m-r">
+            <div class="input-group margin-center col-sm-7" >
+                <input v-model="newTodoText" v-on:keyup.enter="addNewTodo" type="text" placeholder="请输入罪名" name="accusal" id="accusal" class="form-control input-lg">
+                <div class="input-group-btn">
+                    <button class="btn btn-lg btn-primary" type="button" v-on:click="search"> 搜索 </button>
+                </div>
+            </div>
+        </div>
+        <div class="row related" v-if="todoslength > 0">
+            <h4 class="tag-title"><i class="fa fa-bookmark hot-icon"></i>搜索条件</h4>
+            <ul class="tag-list m-l accusal-list" style="padding: 0">
+                <li is="todo-item" v-for="(index, todo) in todos" v-bind:title="todo" v-on:remove="todos.splice(index, 1)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tip"><span class="tip-con"></span></div>
+
+    <div class="footer-nm">
+        <div class="pull-center">© 2017-2019 <a href="http://www.zi-han.net/" target="_blank">富士通研究开发中心有限公司</a>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/vue/dist/vue.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
+
+
+ 
+        

@@ -1,0 +1,213 @@
+.margin-center{
+    margin: 0 auto;
+}
+
+.accusal-list{
+  z-index: 5;
+  position: absolute;
+  width: 300px;
+  left: 0;
+}
+
+.accusal-list li{
+  list-style: none;
+  display: inline-block;
+}
+
+.close{
+  padding-left: 12px;
+  margin-top: -2px;
+}
+
+.search-down{
+    margin-right: -2px;
+    padding:13px 16px;
+    font-size: 14px;
+}
+
+.search-type{
+    margin-top: 13px;
+    position: fixed;
+    z-index: 5;
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.related{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.hot-icon{
+    font-size: 16px;
+    margin-right: 10px;
+    color: #FF9800;
+}
+
+.footer-nm{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-top:1px solid #e5e5e5;
+    padding-top:10px;
+}
+
+.left-href{
+    float: right;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+
+.search-total{
+    padding: 12px 15px 15px 0;
+    display: block;
+    text-align: right;
+}
+
+.search-result{
+    padding: 20px 0px;
+}
+
+/*.search-result:hover{
+    background-color: #ecebeb;
+}*/
+
+.hr-line-dashed{
+    margin: 0 !important;
+}
+
+.unit{
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari and Chrome */
+    display:box;
+}
+
+.unit .unit-left{
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    box-flex:1.0;
+}
+
+.unit .unit-right{
+    display:block;
+    word-wrap:break-word;
+    -moz-box-flex:2.0; /* Firefox */
+    -webkit-box-flex:2.0; /* Safari 和 Chrome */
+    box-flex:2.0;
+}
+
+
+.search-result .title{
+    font-size: 12px;
+    display:-moz-box; /* Firefox */
+    display:-webkit-box; /* Safari and Chrome */
+    display:box;
+}
+
+.search-result .title .title-left{
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    box-flex:1.0;
+}
+
+.search-result .title ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -moz-box-flex:2.0; /* Firefox */
+    -webkit-box-flex:2.0; /* Safari 和 Chrome */
+    box-flex:2.0;
+}
+
+.search-result .title  ul li a{
+    color: #787b7d;
+}
+
+.search-result .title  ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+.intend li:nth-child(n+2){
+    display: none;
+}
+
+.more-tit{
+    cursor: pointer;
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    box-flex:1.0;
+}
+
+/*detail*/
+
+.detail{
+    max-width:1200px;
+    margin: 0 auto;
+    min-height: 94%;
+}
+
+.border-b{
+    border-top: none;
+    border-bottom: solid;
+    border-color: #e7eaec;
+    border-width: 1px 0;
+}
+
+.main-color{
+    color: #4b8dde;
+}
+
+.arrow2{
+    margin: 3px 8px 4px 0;
+    border-left: 5px dashed transparent;
+    border-bottom: 5px dashed transparent;
+    border-top: 5px dashed transparent;
+    border-right: 5px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+.arrow3
+{
+    margin: 3px 0 4px 8px;
+    border-top: 5px dashed transparent;
+    border-bottom: 5px dashed transparent;
+    border-right: 5px dashed transparent;
+    border-left: 5px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.empty{
+    display: none;
+}
+
+.empty p{
+    font-size: 18px;
+    font-family: microsoft yahei;
+    color: #000;
+}
+
+.empty p em {
+    color: #c00;
+}
+
+.tip{
+    text-align: center;
+    display:none;
+  }
+
+.tip-con{
+  position: fixed;
+  top: 50%;
+  background-color: rgba(128, 128, 128, 0.72);
+  padding: 8px 20px;
+  font-size: 19px;
+  border-radius: 10px;
+  font-family: cursive;
+  color: #fff;
+}
